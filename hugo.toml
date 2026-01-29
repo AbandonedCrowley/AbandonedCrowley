@@ -1,4 +1,4 @@
-baseurl      = "https://abandonedcrowley.github.io/"
+baseurl      = "https://abandonedcrowley.github.io/AbandonedCrowley/"
 title        = "My Blog"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
