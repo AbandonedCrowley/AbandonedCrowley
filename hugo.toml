@@ -4,6 +4,8 @@ languageCode = "en-us"
 theme        = "hello-friend-ng"
 pagination.pagerSize     = 10
 
+defaultContentLanguage = "zh"
+
 [params]
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
@@ -13,42 +15,60 @@ pagination.pagerSize     = 10
   # Subtitle for home
   homeSubtitle = "Author's Country"
 
-  # Set disableReadOtherPosts to true in order to hide the links to other posts.
   disableReadOtherPosts = false
 
-  # Enable sharing buttons, if you like
   enableSharingButtons = true
   
   # Show a global language switcher in the navigation bar
   enableGlobalLanguageMenu = true
 
   # Metadata mostly used in document's head
-  description = "My new homepage or blog"
-  keywords = "homepage, blog"
+  description = "作家之国"
+  keywords = "homepage, blog, tech"
   images = [""]
 
 [taxonomies]
-    category = "blog"
+    category = "categories"
     tag      = "tags"
     series   = "series"
 
 [languages]
+  [languages.zh]
+    languageName = "中文" 
+    weight = 1  
+    title = "作家之国"
+    
+    [languages.zh.params]
+      subtitle = "绕树三匝 何枝可依"
+      readOtherPosts = "更多"
+
+      [languages.zh.params.logo]
+        logoText = "作家之国"
+        logoHomeLink = "/"
+
+    [[languages.zh.menu.main]]
+      identifier = "blog"
+      name       = "博客"
+      url        = "/posts"
+
   [languages.en]
-    title = "AiwassZ's Blog"
-    keywords = ""
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-    readOtherPosts = "Read other posts"
+    languageName = "English"
+    weight = 2
+    title = "Author's Country"
+    
+    [languages.en.params]
+      subtitle = "Author's Country"
+      readOtherPosts = "Find More"
 
-  [languages.en.params]
-    subtitle  = "A simple theme for Hugo"
+      # 英文版 Logo
+      [languages.en.params.logo]
+        logoText = "AC" 
+        logoHomeLink = "/"
 
-    [languages.en.params.logo]
-      logoText = "hello friend ng"
-      logoHomeLink = "/"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
+    [[languages.en.menu.main]]
+      identifier = "blog"
+      name       = "Blog"
+      url        = "/posts"
 
   # And you can even create generic menu
   [[menu.main]]
