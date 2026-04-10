@@ -39,7 +39,7 @@ defaultContentLanguage = "zh"
     title = "作家之国"
     
     [languages.zh.params]
-      subtitle = "绕树三匝 何枝可依"
+      homeSubtitle = "绕树三匝 何枝可依"
       readOtherPosts = "更多"
 
       [languages.zh.params.logo]
@@ -57,7 +57,7 @@ defaultContentLanguage = "zh"
     title = "Author's Country"
     
     [languages.en.params]
-      subtitle = "Author's Country"
+      homeSubtitle = "Author's Country"
       readOtherPosts = "Find More"
 
       # 英文版 Logo
@@ -70,21 +70,3 @@ defaultContentLanguage = "zh"
       name       = "Blog"
       url        = "/posts"
 
-  # And you can even create generic menu
-  [[menu.main]]
-    identifier = "blog"
-    name       = "Blog"
-    url        = "/posts"
-
-  # and submenus
-  [[menu.main]]
-    identifier  = "parent"
-    name        = "Parent"
-    url         = "/parent"
-    hasChildren = true
-
-  [[menu.main]]
-    identifier  = "child"
-    name        = "Child"
-    url         = "/parent/child"
-    parent      = "parent"
