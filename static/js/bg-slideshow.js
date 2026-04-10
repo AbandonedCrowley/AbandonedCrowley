@@ -1,6 +1,11 @@
 (function () {
-  const images = window.bgImages || ['/images/bg1.jpg'];
+  if (!window.bgImages || window.bgImages.length === 0) return;
+
+  const images = window.bgImages;
   const delay = 6000; // 每张图片显示的毫秒数
+
+  // 让 body 背景透明，否则实色背景会遮住图层
+  document.body.style.backgroundColor = 'transparent';
 
   const css = `
     .bg-layer {
