@@ -1,9 +1,5 @@
 (function () {
-  const images = [
-    '/images/bg1.jpg',
-    '/images/bg2.jpg',
-    '/images/bg3.jpg',
-  ];
+  const images = window.bgImages || ['/images/bg1.jpg'];
   const delay = 6000; // 每张图片显示的毫秒数
 
   const css = `
