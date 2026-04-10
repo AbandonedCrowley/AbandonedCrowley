@@ -19,8 +19,6 @@ defaultContentLanguage = "zh"
 
   enableSharingButtons = true
 
-  customJS = ["/js/bg-slideshow.js"]
-
   # Show a global language switcher in the navigation bar
   enableGlobalLanguageMenu = true
 

@@ -1,5 +1,9 @@
-<script>
-  window.bgImages = [
-    {{ "/images/bg1.jpg" | relURL | jsonify }}
-  ];
-</script>
+<style>
+  body {
+    background-image: url('{{ "/images/bg1.jpg" | relURL }}') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+  }
+</style>
